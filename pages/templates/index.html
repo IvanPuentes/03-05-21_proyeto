@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<style>
+		#menu{
+			width: 20%;
+			height: 60px;
+			background-color: black;
+			text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 25px;
+			float: left;
+			padding-top: 40px;
+			color: white;
+
+		}
+		#img{
+			width: 1350px;
+			height: 400px;
+		}
+		#img1{
+			width: 350px;
+			height: 300px;
+		}
+		#contenido{
+			width: 400px;
+			height: 350px;
+			float: left;
+			margin-left: 50px;
+			text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+	
+	</style>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<img id="img" src="{% static 'img/1.jpg' %}">
+
+	<div style="width: 1350px;height: 500px;background-color: lightblue;">
+		<div style="background-color: lightcoral;">
+			<div id="menu">Inicio</div> 
+			<div id="menu" ><a id="a_1" href="{% url 'catalogo' %}">Catalogo</a></div> 
+			<div id="menu">Venta </div>
+			<div id="menu">Contactanos</div> 
+			<div id="menu">Acerca de </div> 
+		</div>
+		<div  style="background-color: lightcoral;">
+			<div id="contenido">
+				<div>Xbox 360</div>
+				<div><img id="img1" src="{% static 'img/2.jpg' %}"></div>
+				<div>presio $3000</div>
+			</div>
+			
+			<div id="contenido">
+				<div>Playstation 4</div>
+				<div><img id="img1" src="{% static 'img/3.jpg' %}"></div>
+				<div>presio $10000</div>
+			</div>
+			
+			<div id="contenido">
+				<div>Nintendo Switch</div>
+				<div><img id="img1" src="{% static 'img/4.jpg' %}"></div>
+				<div>presio $11,300</div>
+			</div>
+		</div>
+
+
+		
+	</div>
+
+
+
+
+
+</body>
+</html>
